@@ -1,0 +1,20 @@
+<button (click)="mergeMapExample()">Merge Map</button> |
+<button (click)="concatMapExample()">Concat Map</button> |
+<button (click)="switchMapExample()">Switch Map</button> |
+<button (click)="exhaustMapExample()">Exhaust Map</button>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Action</th>
+  </tr>
+
+  @for (row of data(); track row.id) {
+  <tr>
+    <td>{{ row.id }}</td>
+    <td>{{ row.title }}</td>
+    <td></td>
+  </tr>
+  }
+</table>

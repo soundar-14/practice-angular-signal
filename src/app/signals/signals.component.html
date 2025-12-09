@@ -1,0 +1,8 @@
+<p>Price: {{ price() }}</p>
+<p>Qty: {{ qty() }}</p>
+<p>Total: {{ total() }}</p>
+<p>Total Value: {{ totalValue }}</p>
+
+<input type="text" [(ngModel)]="price" />
+
+<button (click)="updateQty()">Increase Qty</button>

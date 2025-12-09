@@ -1,10 +1,13 @@
-<p>Price: {{ price() }}</p>
-<p>Qty: {{ qty() }}</p>
-<p>Total: {{ total() }}</p>
-<p>Total Value: {{ totalValue }}</p>
+<div>
+    <a routerLink="/">Home</a>
+    |
+    <a routerLink="/signals">Signals Practice</a>
+    |
+    <a routerLink="/rxjs-map">RxJs Maps</a>
+        
+</div>
 
-<input type="text" [(ngModel)]="price" />
-
-<button (click)="updateQty()">Increase Qty</button>
-
-<router-outlet />
+<div>
+    <br>
+    <router-outlet />
+</div>
